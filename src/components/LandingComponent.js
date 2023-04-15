@@ -5,15 +5,16 @@ import FadeIn from "react-fade-in";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Navbar from "./Navbar";
 import CustomAnimation from "./CustomAnimation";
+import Menu from "./Menu";
 
 function LandingComponent() {
   const [show, setShow] = useState(false);
-
   return (
     <>
       <Navbar />
+      <Menu />
       <div className="landing-page-text mobile-padding">
-        <div>
+        <div className="real-content">
           <div className="typewriter-container">
             <Typewriter
               onInit={(typewriter) => {
@@ -43,7 +44,7 @@ function LandingComponent() {
                 <Link className="btn hvr-sweep-to-right contact-btn contact-me" href="#contact-page">
                   <span className="contact-text">Contact Me</span> <ArrowForwardIosIcon className="btn-icon" />
                 </Link>
-                <Link className="btn btn-outlined hvr-fade contact-btn cv-btn" href="/">
+                <Link className="btn btn-outlined hvr-fade contact-btn cv-btn" href={'https://drive.google.com/file/d/1gw-skZjEX97d9Valcnt2d0505IqjhWkJ/view?usp=share_link'} target="_blank">
                 <span className="contact-text">Download CV</span> <ArrowForwardIosIcon className="btn-icon" />
                 </Link>
               </div>

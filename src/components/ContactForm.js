@@ -114,8 +114,9 @@ const ContactForm = () => {
               </label>
             </div>
             {
-              loading ? <CustomAnimation name={'141545-shapes-changing-preloader'} width={250} height={250} /> : <button
-              className="form-btn"
+              loading ? <CustomAnimation name={'141545-shapes-changing-preloader'} width={250} height={250} /> : 
+              <button
+              className="form-btn hvr-sweep-to-right"
               onClick={handleSubmit}
             >
               Send Message 

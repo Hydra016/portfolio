@@ -163,10 +163,6 @@ a {
   margin-left: 30px;
 }
 
-.contact-text {
-  width: 120px;
-}
-
 .cv-btn {
   margin-left: 10px;
 }
@@ -187,6 +183,10 @@ a {
   margin-bottom: 50px;
 }
 
+.real-content {
+  width: 100%;
+}
+
 .landing-page-text {
   font-size: 25px;
   margin-top: 50px;
@@ -198,7 +198,35 @@ a {
 
 .contact-btn {
   font-size: 15px;
-  padding: 10px 10px;
+}
+
+.hvr-underline-from-left {
+  padding-bottom: 10px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #FF6000;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
 }
 
 .hvr-fade {
@@ -213,7 +241,8 @@ a {
   transition-property: color, background-color;
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #e68a00;
+  background-color: #cc7a00;
+  border: 1px solid #cc7a00;
   color: white;
 }
 
@@ -250,10 +279,10 @@ a {
   transition-timing-function: ease-out;
   border-radius: 5px;
 }
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+.hvr-sweep-to-right:hover {
   color: white;
 }
-.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+.hvr-sweep-to-right:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -554,8 +583,8 @@ a {
   width: 200px;
   padding: 15px 20px; 
   border: none;
-  background-color: #FFA559;
-  color: #454545;
+  background-color: #454545;
+  color: #fff;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -613,7 +642,140 @@ a {
   text-transform: uppercase;
 }
 
+.menu {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 1;
+  padding: 9px;
+}
+
 @media (max-width: 768px) {
+  .navbar-link {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu-opened {
+    background-color: #FF6000;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    width: 100vw;
+    z-index: 19;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+    padding: 50px 50px;
+    -webkit-animation: slideIn 0.5s forwards;
+    -moz-animation: slideIn 0.5s forwards;
+    animation: slideIn 0.5s forwards;
+  }
+
+  .menu-line {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #FF6000;
+  }
+
+  .menu-opened-out {
+    background-color: #FF6000;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    width: 100vw;
+    z-index: 19;
+    padding: 50px 50px;
+    -webkit-animation: slideOut 0.5s forwards;
+    -moz-animation: slideOut 0.5s forwards;
+    animation: slideOut 0.5s forwards;
+  }
+
+  @-moz-keyframes slideOut {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(900px);
+    }
+  }
+  @-webkit-keyframes slideOut {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-900px);
+    }
+  }
+  @keyframes slideOut {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-900px);
+    }
+  }
+  
+
+  @-webkit-keyframes slideIn {
+    0% {
+      transform: translateX(-900px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @-moz-keyframes slideIn {
+    0% {
+      transform: translateX(-900px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-900px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .menu-icon {
+    background-color: rgb(59, 59, 59);
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.6);
+  }
+
+  .cancel {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    
+  }
+
+  .menu-link {
+    margin-bottom: 35px;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
   .content {
     font-size: 18px;
   }
