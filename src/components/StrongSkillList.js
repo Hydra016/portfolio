@@ -37,7 +37,7 @@ const StrongSkillList = () => {
                 className="box-icon"
                 src="https://cdn-icons-png.flaticon.com/512/5968/5968566.png"
               />
-              <span className="box-text">Professional</span>
+              <span className="box-text">Good</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -57,7 +57,7 @@ const StrongSkillList = () => {
                 className="box-icon"
                 src="https://cdn-icons-png.flaticon.com/512/5968/5968526.png"
               />
-              <span className="box-text">Professional</span>
+              <span className="box-text">Basic</span>
             </div>
           </SwiperSlide>
           <SwiperSlide>
