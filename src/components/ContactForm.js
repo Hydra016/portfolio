@@ -33,7 +33,7 @@ const ContactForm = () => {
   return (
     <div className="contact-form mobile-padding">
       {msg ? (
-        <>
+        <div className="after-msg">
           <CustomAnimation
             customClass={"container-message"}
             name={"137680-meditating-rabbit"}
@@ -42,6 +42,7 @@ const ContactForm = () => {
             message={"Thank you for messaging me"}
           />
           <button
+            className="send-another hvr-sweep-to-right"
             onClick={() => {
               setMsg(false);
               setLoading(false);
@@ -50,7 +51,7 @@ const ContactForm = () => {
           >
             send another message
           </button>
-        </>
+        </div>
       ) : (
         <Fade>
           <h1 className="form-heading">Leave me a message</h1>
