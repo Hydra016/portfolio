@@ -11,7 +11,7 @@ const Boxes = () => {
     <div className='box'>
     <span className='box-text'>TypeScript</span>
     <img className='box-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968566.png' />
-    <span className='box-text'>Professional</span>
+    <span className='box-text'>Good</span>
     </div>
     <div className='box'>
     <span className='box-text'>ReactJS</span>
@@ -21,7 +21,7 @@ const Boxes = () => {
     <div className='box'>
     <span className='box-text'>NodeJS</span>
     <img className='box-icon' src='https://cdn-icons-png.flaticon.com/512/5968/5968526.png' />
-    <span className='box-text'>Professional</span>
+    <span className='box-text'>Basic</span>
     </div>
     <div className='box'>
     <span className='box-text'>CSS</span>

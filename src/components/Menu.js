@@ -14,16 +14,16 @@ const Menu = () => {
         <div className={`${open ? 'menu-opened' : 'menu-opened-out'}`}>
           <img src="https://img.icons8.com/ios-filled/256/cancel.png" className="cancel hamburger cancel" onClick={() => setOpen(false)}></img>
           <div className="menu-links">
-            <Link className="menu-link" href="/">
+            <Link onClick={() => setOpen(false)} className="menu-link" href="#home-page">
               Home
             </Link>
             <Link onClick={() => setOpen(false)} className="menu-link" href="#skills-page">
               Skills
             </Link>
-            <Link onClick={() => setOpen(false)} className="menu-link" href="/">
+            <Link onClick={() => setOpen(false)} className="menu-link" href="#projects-page">
               Projects
             </Link>
-            <Link onClick={() => setOpen(false)} className="menu-link" href="/">
+            <Link onClick={() => setOpen(false)} className="menu-link" href="#contact-page">
               Contact
             </Link>
           </div>

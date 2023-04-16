@@ -10,7 +10,7 @@ import Menu from "./Menu";
 function LandingComponent() {
   const [show, setShow] = useState(false);
   return (
-    <>
+    <div id="home-page">
       <Navbar />
       <Menu />
       <div className="landing-page-text mobile-padding">
@@ -57,7 +57,7 @@ function LandingComponent() {
           : null}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
