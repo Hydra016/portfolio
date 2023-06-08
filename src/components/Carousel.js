@@ -7,6 +7,7 @@ import AmazeMe from '../../public/AmazeMe.png'
 import ImperiaOrganic from '../../public/ImperiaOrganic.png'
 import SmartDriver from '../../public/SmartDriver.jpg';
 import VetrinaLive from '../../public/VetrinaLive.png'
+import Physio from '../../public/Physio.png'
 
 const Carousel = () => {
   return (
@@ -33,6 +34,10 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide className="slide">
             <CarouselItem myImage={VetrinaLive} projectGithubLink={'https://github.com/Hydra016/Vetrina-Live'} projectLink={'https://hydra016.github.io/Vetrina-Live/'}  title='VetrinaLive Clone' content={`Vetrina Live's Clone is an e-commerce website that is developed using React.js and styled using Material UI. The website serves as a replica of Vetrina Live, a popular e-commerce platform, providing a similar user interface and functionality. The website offers a seamless online shopping experience with a wide range of products, intuitive navigation, and a visually appealing interface. Material UI, a popular UI library for React.js, is used for styling, ensuring a modern and responsive design. The website is designed to mimic the features and user experience of Vetrina Live, making it a suitable choice for those seeking to create a similar e-commerce platform.`} />
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <CarouselItem myImage={Physio} projectGithubLink={'https://github.com/Hydra016/AI-Physiotherapist'} projectLink={'https://ai-physiotherapist.vercel.app/'}  title='AI Physiotherapist' content={`
+Introducing PhysioTrack, the ultimate physiotherapy app designed to revolutionize your rehabilitation journey. This comprehensive solution offers personalized exercise plans, progress tracking, integration with wearable devices, and a convenient communication channel with your physiotherapist. With PhysioTrack, you can monitor your progress, receive tailored workouts, gather valuable data from wearables, and stay connected with your physiotherapist for ongoing support. Say hello to a seamless and effective physiotherapy experience with PhysioTrack.`} />
           </SwiperSlide>
         </Swiper>
       </Fade>
