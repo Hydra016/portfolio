@@ -15,13 +15,13 @@ const CarouselItem = ({
         <div className="content-container">
           <span className="project-text">{content}</span>
           <div className="project-link-box">
-
-              <a className="project-link" href={projectLink} target="_blank">
+              {projectLink ? <a className="project-link" href={projectLink} target="_blank">
               <img
                 src="https://img.icons8.com/ios/256/link.png"
                 className="project-link-icon"
               />
-              </a>
+              </a> : null}
+              
               <a
                 className="project-link"
                 href={projectGithubLink}

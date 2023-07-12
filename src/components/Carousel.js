@@ -3,11 +3,12 @@ import { Autoplay } from "swiper";
 import "swiper/css";
 import { Fade } from "react-reveal";
 import CarouselItem from "./CarouselItem";
-import AmazeMe from '../../public/AmazeMe.png'
-import ImperiaOrganic from '../../public/ImperiaOrganic.png'
+import AmazeMe from '../../public/AmazeMe.png';
+import ImperiaOrganic from '../../public/ImperiaOrganic.png';
 import SmartDriver from '../../public/SmartDriver.jpg';
-import VetrinaLive from '../../public/VetrinaLive.png'
-import Physio from '../../public/Physio.png'
+import VetrinaLive from '../../public/VetrinaLive.png';
+import Physio from '../../public/Physio.png';
+import HouseApp from '../../public/houseApp.png';
 
 const Carousel = () => {
   return (
@@ -38,6 +39,9 @@ const Carousel = () => {
           <SwiperSlide className="slide">
             <CarouselItem myImage={Physio} projectGithubLink={'https://github.com/Hydra016/AI-Physiotherapist'} projectLink={'https://ai-physiotherapist.vercel.app/'}  title='AI Physiotherapist' content={`
 Introducing PhysioTrack, the ultimate physiotherapy app designed to revolutionize your rehabilitation journey. This comprehensive solution offers personalized exercise plans, progress tracking, integration with wearable devices, and a convenient communication channel with your physiotherapist. With PhysioTrack, you can monitor your progress, receive tailored workouts, gather valuable data from wearables, and stay connected with your physiotherapist for ongoing support. Say hello to a seamless and effective physiotherapy experience with PhysioTrack.`} />
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <CarouselItem myImage={HouseApp} projectGithubLink={'https://github.com/Hydra016/house-app'}  title='Property Helper' content={`Property helper is an app which helps users to list, search and manage different properties across amsterdam. It supports filter, search and all the other functionalities required for best experience for a property application.`} />
           </SwiperSlide>
         </Swiper>
       </Fade>
