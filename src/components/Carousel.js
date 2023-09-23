@@ -10,6 +10,7 @@ import VetrinaLive from "../../public/VetrinaLive.png";
 import Physio from "../../public/Physio.png";
 import HouseApp from "../../public/houseApp.png";
 import urbanAbode from "../../public/urbanAbode.png";
+import pathLabs from "../../public/pathLabs.png";
 
 const Carousel = () => {
   return (
@@ -90,7 +91,16 @@ Introducing PhysioTrack, the ultimate physiotherapy app designed to revolutioniz
               title="Urban Abode"
               content={`Urban Abode is a website which helps users to search for houses in california. in this project I used tensorflow to predict house prices. I created my own model using knn algorithm and tensorflow and then I used nextJS for creating the website. if you set the status filter to for sale in \"view all offers\" page you can also calculate mortgage. In the future rent estimation, affordability estimation and other cool features are also planned for this application. `}
               projectLink={"https://urban-abode-yfz1.vercel.app/"}
-           />
+            />
+          </SwiperSlide>
+          <SwiperSlide className="slide">
+            <CarouselItem
+              myImage={pathLabs}
+              projectGithubLink={"https://github.com/Hydra016/Path-Labs"}
+              title="Path Labs"
+              content={`Path Labs is a medical website. I created it to test my Logistic regression model which was built with tensorFlow JS. It predicts what is the chance of a person getting a heart attack. Basically it predicts classes but I managed to predict probabilty of getting a heart attack and you can test it through this website. I als focused on keeping the design cool :)`}
+              projectLink={"https://path-labs.vercel.app/"}
+            />
           </SwiperSlide>
         </Swiper>
       </Fade>
